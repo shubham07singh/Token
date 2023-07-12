@@ -1,21 +1,38 @@
-Token Creation
-This is a simple token creation and desctruction using solidity language as well it stores information about the token
+ETH Token Program
+A program made with solidity (0.8.19) that has a Token Minting and Burning functionality
 
-Requirements
-The token creation contract has 3 public variables are as follows:
--tokenName: It is a string data type reprents the token name.
--tokenAbbrev: It is also a string data type which represents the abbrevation of token
--totalSupply: it is unsignes integer which represents the total supply of token.
-Mapping
-The contract has a mapping of addresses to balances:
+Description
+The program demonstrates the basics of solidity using concepts like smart contracts, variables and their types, mapping, and functions. The program particularly has two functions -
 
-balances: A mapping that associates addresses with their corresponding token balances.
+Mint Token
+Burn Token
+The Burn function also considers the total supply before burning Tokens using the Conditional Statement concept, as the burn amount should not be more than the total supply.
+
+Getting Started
+Installing
+Copy and Paste the Code into the Remix IDE to compile and execute the Contract.
 Executing program
-1)For Creation:
-Here for the token creation we create a function call mint which has two parameters as address and value of token. The function then increases the total supply by that number and increases the balance of the address by that amount.
+Ctrl+s or Select the Compile Option on the Remix IDE on the Navbar to the Left
+Click on the Deploy and Run transactions option on the Navbar and Deploy your smart contract.
+You will find the following in the deployed contracts section, all the variables and functions that are written in the code
+![image](https://github.com/shubham07singh/Token/assets/126802667/600b8833-e5b8-43f9-b68f-4bc3129212ff)
 
-2)For Destruction:
-Here for the token destruction we create a function called as burn which also has same parameter as afor creating the token.It will take an address and value just like the mint functions. It will then deduct the value from the total supply and from the balance.
+Remix IDE provides you with sample Addresses for you to test your program at the account section, You can copy any address and use it as a parameter to be passed into our functions.
 
-License
-This project is licensed under the Solidity Assessment License - see the LICENSE.md file for details
+![image](https://github.com/shubham07singh/Token/assets/126802667/e295f3b9-b839-42de-87ff-1d0f7fc4aa03)
+
+Pass the Number of tokens you want to Mint/Burn and the address and click Transact
+
+![image](https://github.com/shubham07singh/Token/assets/126802667/32f48434-675f-43e5-a5be-045ab6ebcc0d)
+
+You can click on an individual variable and call it to see if the values have been affected or Not
+
+![image](https://github.com/shubham07singh/Token/assets/126802667/ee1c3a9f-eb4f-4598-afb0-aea109238a7b)
+
+Finally You can refer to the call stack at the bottom to verify if a transaction is successful or not.
+
+![image](https://github.com/shubham07singh/Token/assets/126802667/a9147afe-9b2e-43ed-b6fb-582c25398d57)
+
+Thank you
+
+
